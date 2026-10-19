@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 # root-password
 #docker exec -it flaskapp_db mysql -p -u root

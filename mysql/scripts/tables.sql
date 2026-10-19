@@ -26,7 +26,7 @@ CREATE TABLE `user` (
     PRIMARY KEY (`id`),
     UNIQUE KEY `user_keyname` (`keyname`),
     KEY `user_role` (`user_role`),
-    KEY `user_email` (`user_email`),
+    UNIQUE KEY `user_email` (`user_email`),
     KEY `user_login` (`mod_login`),
     KEY `user_create` (`mod_create`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;
@@ -60,7 +60,7 @@ SELECT "table `item` created" AS MSG;
 
 
 -- -------------------------------------------- --
--- item
+-- item_user
 -- -------------------------------------------- --
 DROP TABLE IF EXISTS `item_user`;
 CREATE TABLE `item_user` (
